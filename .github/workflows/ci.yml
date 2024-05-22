@@ -43,9 +43,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and Push Image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v5
         with:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_REGISTRY }}/${{ secrets.IMAGE_NAME }}:latest
+          tags: ${{ secrets.DOCKER_REGISTRY }}/${{ secrets.IMAGE_NAME }}
