@@ -1,4 +1,4 @@
-package xyg.orggmb.dmserializer
+package xyz.orggmb.dmserializer
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
